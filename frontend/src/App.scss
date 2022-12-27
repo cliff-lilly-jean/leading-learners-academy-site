@@ -1,16 +1,65 @@
-@import './css/base.scss';
+@import './css/utility.scss';
 
-body {
+// body {
+//   background: #FDF8EE url('./assets/images/Home/hero.png') center no-repeat;
+//   background-size: cover;
+
+// }
+
+
+.home {
+  width: 100vw;
+  min-height: 100vh;
   background: #FDF8EE url('./assets/images/Home/hero.png') center no-repeat;
   background-size: cover;
 
-}
+  .hero {
+    margin: 0 auto;
 
-.App {
-  width: 100vw;
-  min-height: 100vh;
-}
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6rem 1rem;
+    }
 
-.hero {
-  margin: 0 auto;
+    .hero-content__left {
+      width: 70%;
+    }
+
+    .hero-sub-title {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: $orange;
+    }
+
+    .hero-title {
+      margin: 1rem 0;
+      font-size: $xl;
+    }
+
+    .hero-copy {}
+
+    .hero-img {
+      position: absolute;
+      bottom: 5%;
+      right: -28%;
+      z-index: 1;
+
+      img {
+        width: 65%;
+      }
+    }
+
+    .cloud {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+    }
+
+  }
+
 }
