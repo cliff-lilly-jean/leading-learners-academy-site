@@ -1,15 +1,6 @@
-// Colors
-$gray: #6b6b6b;
-$black: #222;
-$orange: #EB6025;
-$white: #fff;
-$turquoise: #0092B8;
-$drk-green: #043947;
-$cream: #FDF8EE;
+@import './variables.scss';
 
-// Font sizes
-$xl: 78px;
-$lg: 54px;
-$md: 48px;
-$sm: 36px;
-$xs: 20px;
+// text
+.orange-txt {
+    color: $orange;
+}

@@ -1,18 +1,13 @@
+@import './css/variables.scss';
 @import './css/utility.scss';
-
-// body {
-//   background: #FDF8EE url('./assets/images/Home/hero.png') center no-repeat;
-//   background-size: cover;
-
-// }
-
 
 .home {
   width: 100vw;
   min-height: 100vh;
-  background: #FDF8EE url('./assets/images/Home/hero.png') center no-repeat;
+  background: #f5e9f2 url('./assets/images/Home/hero.png') center no-repeat;
   background-size: cover;
 
+  // Hero section
   .hero {
     margin: 0 auto;
 
@@ -27,6 +22,10 @@
     .hero-content__left,
     .hero-content__right {
       width: 65%;
+
+      &.mt {
+        margin-top: 4rem;
+      }
     }
 
     .hero-sub-title {
@@ -48,11 +47,22 @@
       position: absolute;
       bottom: -9%;
       right: -28%;
-      z-index: 1;
+      z-index: 2;
 
       img {
         width: 100%;
       }
+    }
+
+    .hero-cta {
+      color: $white;
+      background-color: $orange;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      padding: 1rem;
+      min-width: 15rem;
+      border-radius: 50px;
+      border: 1px solid transparent;
     }
 
     .cloud {
@@ -61,8 +71,10 @@
       left: 0;
       z-index: 1;
       width: 100%;
+      opacity: 75%;
     }
 
   }
 
+  // .home end
 }
