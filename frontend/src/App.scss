@@ -24,8 +24,9 @@
       padding: 6rem 1rem;
     }
 
-    .hero-content__left {
-      width: 70%;
+    .hero-content__left,
+    .hero-content__right {
+      width: 65%;
     }
 
     .hero-sub-title {
@@ -39,16 +40,18 @@
       font-size: $xl;
     }
 
-    .hero-copy {}
+    .hero-copy {
+      font-size: 24px;
+    }
 
     .hero-img {
       position: absolute;
-      bottom: 5%;
+      bottom: -9%;
       right: -28%;
       z-index: 1;
 
       img {
-        width: 65%;
+        width: 100%;
       }
     }
 
